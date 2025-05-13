@@ -5,13 +5,12 @@
     padding: 0;
 }
 
-.balanza {
-    height: 40px;
-    width: 40px;
-    border-color: black;
-    border-width: 1px;
-    border-style: dashed;
-    background-color: gainsboro;
+.tituloabogada{
+    font: bold;
+    font-family: lucida sans;
+    text-align: center;
+    padding: 20px;
+    color: rgb(80, 45, 45);
 }
 
 body {
@@ -24,25 +23,8 @@ body {
 
 li{
     list-style: none;
-    color: blue;
     text-align: center;
     font-weight: bold;
-}
-
-h2 {
-    font-size: small;
-}
-
-.rrss{
-    border: 2px solid black;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    transition: transform 1s ease;
-}
-
-.rrss:hover{
-    transform: scale(1.5);
 }
 
 a{
@@ -80,10 +62,30 @@ a{
 
 footer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-    padding: 2px;
+    padding: 40px;
     text-align: center;
+    background-image: url(../media/backgound.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.rrss{
+    border: 1px solid rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 30%;
+    transition: transform 1s ease;
+}
+
+.rrss:hover{
+    transform: scale(1.4);
+}
+
+.copyright {
+    font-size:small;
+    font-weight: bold;
 }
 
 .whatsapp{
@@ -91,10 +93,10 @@ footer{
     align-content: center;
     background-color: rgb(73, 199, 88);
     border: 2px solid black;
-    border-radius: 35%;
+    border-radius: 25%;
     bottom: 30px;
     right: 10px;
-    padding: 15px;
+    padding: 10px;
     z-index: 1000;
 }
 
@@ -105,5 +107,10 @@ footer{
 }
 
 .texto-whatsapp:hover{
-    transform: scale(1.2);
+    transform: scale(1.25);
+}
+
+.accordion-item{
+    font-style: italic;
+    font-weight: bold;
 }

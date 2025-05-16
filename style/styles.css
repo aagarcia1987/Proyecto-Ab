@@ -5,43 +5,80 @@
     padding: 0;
 }
 
-.tituloabogada{
-    font: bold;
-    font-family: lucida sans;
-    text-align: center;
-    padding: 20px;
-    color: rgb(80, 45, 45);
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100px;
+    z-index: 1000;
 }
 
-body {
-    font-family: Nunito;
+nav{
+    text-align: right;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(186, 175, 16);
+    color: #000000;
+}
+
+.logoinicio{
+    height: 100px;
+}
+
+body{   
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+.tituloindex{
+    margin: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.acordeonimg{
+    width: 300px;
+    padding: 20px;
+}
+
+.accordion {
+    margin: 30px;
+    font-style: oblique;
+    font-weight: bold;
 }
 
 .especialidad {
     font-weight: bold;
 }
 
-li{
-    list-style: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-    font-weight: 300;
-    font-size: x-large;
-    font-weight: bold;
-}
-
 .textubicacion {
     font-weight: bold;
-}
-
-.sitioactual {
-    text-decoration: underline;
-    color: brown;
-    text-shadow: 0 0 1rem brown;
 }
 
 .textonovedades {
@@ -68,7 +105,7 @@ footer{
     text-align: center;
     background-image: url(../media/backgound.jpg);
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: cover;
 }
 
 .rrss{
@@ -93,11 +130,11 @@ footer{
     align-content: center;
     background-color: rgb(73, 199, 88);
     border: 2px solid black;
-    border-radius: 25%;
+    border-radius: 20%;
     bottom: 30px;
     right: 10px;
-    padding: 10px;
-    z-index: 1000;
+    padding: 7px;
+    z-index: 1000
 }
 
 .texto-whatsapp{
@@ -108,9 +145,4 @@ footer{
 
 .texto-whatsapp:hover{
     transform: scale(1.25);
-}
-
-.accordion-item{
-    font-style: italic;
-    font-weight: bold;
 }

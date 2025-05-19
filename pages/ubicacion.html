@@ -8,42 +8,64 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="../index.html"><img class="logoinicio" src="../media/Logo.png" alt="Logo"></a>
             <nav>
-                <ul>
-                    <li><a href="./somos.html">Quienes Somos</a></li>
-                    <li><a href="./novedades.html">Novedades</a></li>
-                    <li><a href="./ubicacion.html">Ubicación</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+                <div>
+                    <ul class="menu">
+                        <li><a href="./somos.html">Quienes Somos</a></li>
+                        <li><a href="./novedades.html">Novedades</a></li>
+                        <li><a href="./ubicacion.html">Ubicación</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
     </header>
 
-    <main>
-        <nav><!--Agregar fotos de oficina, espacios-->
-            <p class="textubicacion">Nos encontramos ubicados en la Ciudad de Cordoba, más precisamente en la calle Duarte Quirós 845, piso 2, oficina 4. <br>
-            Si lo desea, puede agendar un turno a través del formulario de Contacto, ubicado en el menú principal. <br>
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.1334829368225!2d-64.19653699999999!3d-31.4161452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27f9035a557%3A0x98b5de2de328d5a6!2sDuarte%20Quir%C3%B3s%20845%2C%20X5000%20C%C3%B3rdoba!5e1!3m2!1ses-419!2sar!4v1744993441976!5m2!1ses-419!2sar" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </nav>
 
+    <main>
+        <div>
+            <p class="oficinastext">Nuestras oficinas</p>
+        </div>
+        <div class="gallery">
+            <img src="../media/oficina1.jpg" alt="Vista 1">
+            <img src="../media/oficina2.jpg" alt="Vista 2">
+            <img src="../media/oficina3.jpg" alt="Vista 2">
+            <img src="../media/oficina4.jpg" alt="Vista 2">
+        </div>
+
+        </div>
+            <div class="text-mapa">
+                <p class="textubicacion">Nos encontramos ubicados en la Ciudad de Cordoba, más precisamente en la calle Duarte Quirós 845, piso 2, oficina 4. <br>
+                Si lo desea, puede agendar un turno a través del formulario de Contacto, ubicado en el menú <a class="arriba" span style="cursor: hand" href="#top">superior.</a> <br>
+                </p>
+            </div>
+        </div>    
     </main>
 
-    <footer>
-        <h2>Derechos Reservados - Dr. Lione Cintia - 2025</h2>
-        <a href="https://www.facebook.com/drcintialione">
-            <img src="../media/facebook.png" alt="Facebook" class="rrss">
-        </a>
-        <a href="https://www.instagram.com/drcintialione">
-            <img src="../media/instagram.png" alt="Instagram" class="rrss">
-        </a>
+    <div class="whatsapp">
         <a href="https://api.whatsapp.com/send/?phone=3512222222&text&type=phone_number&app_absent=0">
-            <img src="../media/whatsapp.png" alt="Whatsapp" class="rrss">
-        </a> <br>
-        <a href="../index.html">Volver al Inicio</a>
+            <img src="../media/whatsapp.png" alt="Whatsapp" width="40px" height="40px">
+        <p class="texto-whatsapp">Contacto</p>
+        </a>
+    </div>
 
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-text">
+                <h2 class="copyright">Derechos Reservados<br>CR Estudio de Abogados - 2025</h2>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/drcintialione">
+                <img src="../media/facebook.png" alt="Facebook" class="rrss">
+                </a>
+                <a href="https://www.instagram.com/drcintialione">
+                <img src="../media/instagram.png" alt="Instagram" class="rrss">
+                </a>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
 </body>
 </html>

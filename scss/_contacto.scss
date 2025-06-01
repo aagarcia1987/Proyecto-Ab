@@ -1,0 +1,22 @@
+.campo-form{
+    color: $colorGolden;
+    box-shadow: 0 0 2rem $colorGolden;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 5%;
+    .form-check-input:checked{
+        border-color: orangered;
+        background-color: $colorGolden;
+    }
+    .form-check-input:hover {
+        background-color: $colorGolden;
+    }
+    .btn-enviar{
+        @include efectoboton;
+        font-weight: bold;
+        transition: 1s;
+    }
+    .btn-borrar{
+        font-weight: bold;
+    }
+}

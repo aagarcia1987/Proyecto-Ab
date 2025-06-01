@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: $colorBlack;
+    .menu{
+        display: flex;
+        text-align: center;
+        margin: 0;
+        li{
+            list-style-type: none;
+            padding: 0;
+            margin-left: 10px;
+            margin-right: 20px;
+            a{
+                color: $colorGolden;
+                text-decoration: none;
+                font-size: small;
+                font-weight: bold;
+                padding: 5px 5px;
+                border-radius: 10px;
+                &:hover{
+                    @include efectoboton
+                }
+            }
+        }
+    }
+}
+
+.logoinicio{
+        width: 120px;
+        height:  auto;
+    }
+

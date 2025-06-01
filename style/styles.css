@@ -1,262 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: black;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+}
+.header .menu {
+  display: flex;
+  text-align: center;
+  margin: 0;
+}
+.header .menu li {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.header .menu li a {
+  color: goldenrod;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.header .menu li a:hover {
+  transition: 3s;
+  background-color: goldenrod;
+  color: black;
 }
 
-.menu{
-    list-style: none;
-    display: flex;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+.logoinicio {
+  width: 120px;
+  height: auto;
 }
 
-.menu ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+footer {
+  background: black;
+}
+footer .container-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+}
+footer .footer-text {
+  display: flex;
+  flex: 1;
+  text-align: left;
+  vertical-align: center;
+  color: goldenrod;
+}
+footer .footer-text .copyright {
+  font-size: small;
+  font-weight: bold;
+}
+footer .rrss {
+  margin-right: 60px;
+  margin-left: 30px;
+  width: 40px;
+  height: auto;
+  border: 1px solid goldenrod;
+  border-radius: 30%;
+  transition: transform 2s ease;
+}
+footer .rrss:hover {
+  transform: scale(1.2);
 }
 
-.menu li{
-    margin-left: 10px;
+.whatsapp {
+  position: fixed;
+  align-content: center;
+  border-radius: 20%;
+  bottom: 14%;
+  right: 5%;
+  z-index: 1000;
+}
+.whatsapp:hover {
+  transform: scale(1.3);
+  transition: transform 2s ease;
+  box-shadow: 0 0 5px green;
 }
 
-nav ul li a {
-    color: goldenrod;
-    text-decoration: none;
-    font-size: small;
-    font-weight: bold;
-    padding: 5px 5px;
-    border-radius: 10px;
+main {
+  background-color: black;
+  padding: 20px;
+  margin: 10px black;
+}
+main .tituloindex {
+  margin: 20px black;
+  display: grid;
+  justify-content: center;
+  color: goldenrod;
+}
+main .textoindex {
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+}
+main .accordion {
+  font-style: oblique;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 40px;
+  box-shadow: 0 1rem 4rem goldenrod;
+  background: transparent;
+}
+main .accordion .acordeonimg {
+  width: 50%;
+  padding: 20px;
+}
+main .accordion .accordion-item {
+  border: none;
+  background: black;
+  color: goldenrod;
+}
+main .accordion .accordion-body {
+  background: black;
+}
+main .accordion .accordion-button {
+  background: transparent;
+  color: goldenrod;
+}
+main .accordion .accordion-button:focus {
+  color: goldenrod;
+  box-shadow: none;
+}
+main .accordion .accordion-button:not(.collapsed) {
+  background: black;
+  color: goldenrod;
+  font-weight: bold;
+  box-shadow: none;
+}
+main .accordion .accordion-button::after {
+  background-color: goldenrod;
 }
 
-nav ul li a:hover {
-    transition: 2s;
-    background-color: rgb(186, 175, 16);
-    color: #000000;
+.main-ubi {
+  color: goldenrod;
+}
+.main-ubi .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-ubi .gallery img {
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.main-ubi .oficinastext {
+  font-weight: bold;
+  font-size: large;
+  font-family: Tahoma;
+}
+.main-ubi .textubicacion {
+  align-content: center;
+  margin: 50px;
+  font-weight: bold;
+}
+.main-ubi .textubicacion .arriba {
+  text-decoration: none;
+  color: brown;
 }
 
-.logoinicio{
-    width: 100px;
-    height: auto;
+.tarjetero {
+  justify-content: center;
+  display: flex;
+  height: auto;
+}
+.tarjetero .card {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 1rem 2rem goldenrod;
+  background-color: black;
+}
+.tarjetero .card-body {
+  background-color: black;
+}
+.tarjetero .card-title {
+  color: goldenrod;
+}
+.tarjetero .card-text {
+  color: goldenrod;
+}
+.tarjetero .btn {
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  transition: 1s ease;
 }
 
-main{
-    margin: 40px;
+.modal {
+  background-color: black;
+  color: goldenrod;
+}
+.modal .modal-header {
+  background-color: black;
+  color: goldenrod;
+}
+.modal .modal-body {
+  background-color: black;
+  color: goldenrod;
+}
+.modal .modal-footer {
+  background-color: black;
+  color: goldenrod;
+}
+.modal .btn-close {
+  background-color: goldenrod;
+}
+.modal .btn-enviar {
+  transition: 3s;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+}
+.modal .btn-cancelar {
+  font-weight: bold;
 }
 
-.tituloindex{
-    margin: 20px;
-    display: grid;
-    justify-content: center;
+.novedades {
+  font-style: italic;
+  color: goldenrod;
+}
+.novedades .texto-novedades {
+  font-weight: bold;
+  font-family: "Lucida Sans";
+  font-size: large;
+}
+.novedades .acuerdo {
+  height: 150px;
+  padding: 2px;
+  margin: 10px;
+  box-shadow: 0 0rem 2rem goldenrod;
+  border-radius: 10px;
+}
+.novedades .formato-campo {
+  font-size: small;
+  color: orangered;
+}
+.novedades .btn {
+  background-color: black;
+  color: goldenrod;
+  font-weight: bold;
+  transition: 1s ease;
 }
 
-.acordeonimg{
-    width: 50%;
-    padding: 20px;
+.campo-form {
+  color: goldenrod;
+  box-shadow: 0 0 2rem goldenrod;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 5%;
+}
+.campo-form .form-check-input:checked {
+  border-color: orangered;
+  background-color: goldenrod;
+}
+.campo-form .form-check-input:hover {
+  background-color: goldenrod;
+}
+.campo-form .btn-enviar {
+  transition: 3s;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+}
+.campo-form .btn-borrar {
+  font-weight: bold;
 }
 
-.accordion {
-    margin: 30px;
-    background-color: lightgray;
-    font-style: oblique;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 1rem 4rem black
-}
-
-.especialidad {
-    font-weight: bold;
-}
-
-.textonovedades {
-    color: rgb(73, 34, 6);
-    font-weight: bold;
-}
-
-.desarrollo{
-    font-style: italic;
-}
-
-.acuerdo {
-    height: 150px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 1rem 2rem rgb(78, 77, 9)
-}
-
-.footer{
-    background-image: url(../media/backgound.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container-footer{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    justify-content: center;
-    margin: 0;
-}
-
-.footer-text{
-    display: flex;
-    flex: 1;
-    text-align: left;
-    vertical-align: center;
-}
-
-.rrss{
-    margin-right: 60px;
-    margin-left: 30px;
-    width: 40px;
-    height: auto;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 30%;
-    transition: transform 1s ease;
-}
-
-.rrss:hover{
-    transform: scale(1.4);
-}
-
-.copyright {
-    font-size:small;
-    font-weight: bold;
-}
-
-.whatsapp{
-    position: fixed;
-    align-content: center;
-    background-color: rgb(73, 199, 88);
-    border: 2px solid black;
-    border-radius: 20%;
-    bottom: 30px;
-    right: 10px;
-    padding: 7px;
-    z-index: 1000;
-}
-
-.texto-whatsapp{
-    font-size: x-small;
-    color: black;
-    transition: transform 1s ease;
-}
-
-.texto-whatsapp:hover{
-    transform: scale(1.25);
-    font-weight: bold;
-}
-
-.tarjetero{
-    justify-content: center;
-    display: flex;
-    height: auto;
-}
-
-.card{
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 1rem 4rem black
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    width: 50%;
-    height: auto;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.oficinastext{
-    font-weight: bold;
-    font-size: large;
-    font-family: Tahoma;
-}
-
-.textubicacion{
-    align-content: center;
-    margin: 50px;
-    font-weight: bold;
-}
-
-.arriba{
-    text-decoration: none;
-    color: brown;
-}
-
-.textform{
-    font-weight: bold;
-}
-
-.form-camp{
-    border-radius: 15px;
-    padding: 20px;
-    margin: 5px;
-    box-shadow: 0 1rem 4rem black
-}
-
-
-@media (min-width: 375px) and (max-width: 767px) {
-    .header{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5px;
-        text-align: center;
-    }
-
-    .menu li{
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .footer{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    .container-footer {
-        display: block;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .acordeonimg{
-        width: 80%;
-    }
-
-    .footer-text{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .tarjetero{
-        display: flex;
-        flex-direction: column;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

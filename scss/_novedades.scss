@@ -1,0 +1,25 @@
+.novedades{
+    font-style: italic;
+    color: $colorGolden;
+    .texto-novedades {
+        font-weight: bold;
+        font-family: 'Lucida Sans';
+        font-size: large;
+    }
+    .acuerdo {
+        height: 150px;
+        padding: 2px;
+        margin: 10px;
+        box-shadow: 0 0rem 2rem $colorGolden;
+        border-radius: 10px;
+    }
+    .formato-campo{
+        font-size: small;
+        color: orangered;
+    }
+    .btn{
+        @include fondoform;
+        font-weight: bold;
+        transition: 1s ease;
+    }
+}

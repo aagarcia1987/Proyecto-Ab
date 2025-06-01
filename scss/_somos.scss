@@ -1,0 +1,55 @@
+.tarjetero{
+    justify-content: center;
+    display: flex;
+    height: auto;
+    .card{
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 1rem 2rem $colorGolden;
+        background-color: $colorBlack;
+    }
+    .card-body{
+        background-color: $colorBlack;
+    }
+    .card-title{
+        color: $colorGolden;
+    }
+    .card-text{
+        color: $colorGolden
+    }
+    .btn{
+        background-color: $colorGolden;
+        color: $colorBlack;
+        font-weight: bold;
+        transition: 1s ease;
+    }
+}
+
+.modal{
+    background-color: $colorBlack;
+    color: $colorGolden;
+    .modal-header{
+        @include fondoform
+    }
+    .modal-body{
+        @include fondoform
+        }
+    .modal-footer{
+        @include fondoform
+    }
+    .btn-close{
+        background-color: $colorGolden;
+    }
+    .btn-enviar{
+        @include efectoboton;
+        font-weight: bold;
+        transition: 1s;
+    }
+    .btn-cancelar{
+        font-weight: bold;
+    }
+}
+

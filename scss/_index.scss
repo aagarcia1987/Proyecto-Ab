@@ -1,0 +1,53 @@
+main{
+    background-color: $colorBlack;
+    padding: 20px;
+    margin: 10px $colorBlack;
+    .tituloindex{
+        margin: 20px $colorBlack;
+        display: grid;
+        justify-content: center;
+        color: $colorGolden;
+    }
+    .textoindex{
+        color: $colorGolden;
+        text-align: center;
+        padding: 20px;
+    }
+    .accordion {
+        font-style: oblique;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 40px;
+        box-shadow: 0 1rem 4rem $colorGolden;
+        background: transparent;
+        .acordeonimg{
+            width: 50%;
+            padding: 20px;
+        }
+        .accordion-item{
+            border: none;
+            background: black;
+            color: $colorGolden;
+        }
+        .accordion-body{
+            background:$colorBlack;
+        }
+        .accordion-button{
+            background: transparent;
+            color: $colorGolden;
+            &:focus{
+                color: $colorGolden;
+                box-shadow: none;
+            }
+            &:not(.collapsed){
+                background: $colorBlack;
+                color: $colorGolden;
+                font-weight: bold;
+                box-shadow: none;
+            }
+            &::after{
+                background-color: $colorGolden;
+            }
+        }
+    }
+}

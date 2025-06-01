@@ -1,0 +1,28 @@
+.main-ubi{
+    color: $colorGolden;
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery img {
+        width: 40%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .oficinastext{
+        font-weight: bold;
+        font-size: large;
+        font-family: Tahoma;
+    }
+    .textubicacion{
+        align-content: center;
+        margin: 50px;
+        font-weight: bold;
+        .arriba{
+            text-decoration: none;
+            color: brown;
+        }
+    }
+}

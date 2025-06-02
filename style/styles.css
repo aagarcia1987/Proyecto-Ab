@@ -41,14 +41,30 @@
   height: auto;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .header .menu li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
 footer {
   background: black;
 }
 footer .container-footer {
   display: flex;
   align-items: center;
-  padding: 20px;
-  margin: 0;
+  padding: 10px;
+  margin: 2px;
 }
 footer .footer-text {
   display: flex;
@@ -62,16 +78,15 @@ footer .footer-text .copyright {
   font-weight: bold;
 }
 footer .rrss {
-  margin-right: 60px;
-  margin-left: 30px;
+  margin: 10px;
   width: 40px;
   height: auto;
-  border: 1px solid goldenrod;
+  border: 1px solid black;
   border-radius: 30%;
   transition: transform 2s ease;
 }
 footer .rrss:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .whatsapp {
@@ -88,6 +103,22 @@ footer .rrss:hover {
   box-shadow: 0 0 5px green;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .footer .container-footer {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .footer-text {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 main {
   background-color: black;
   padding: 20px;
@@ -142,6 +173,11 @@ main .accordion .accordion-button::after {
   background-color: goldenrod;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .acordeonimg {
+    width: 80%;
+  }
+}
 .main-ubi {
   color: goldenrod;
 }
@@ -150,13 +186,14 @@ main .accordion .accordion-button::after {
   flex-wrap: wrap;
 }
 .main-ubi .gallery img {
-  width: 40%;
+  width: 50%;
   height: auto;
   padding: 10px;
   box-sizing: border-box;
   align-items: center;
 }
 .main-ubi .oficinastext {
+  text-align: center;
   font-weight: bold;
   font-size: large;
   font-family: Tahoma;
@@ -168,9 +205,14 @@ main .accordion .accordion-button::after {
 }
 .main-ubi .textubicacion .arriba {
   text-decoration: none;
-  color: brown;
+  color: orangered;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .gallery img {
+    border-radius: 70px;
+  }
+}
 .tarjetero {
   justify-content: center;
   display: flex;
@@ -231,6 +273,16 @@ main .accordion .accordion-button::after {
   font-weight: bold;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .tituloindex {
+    text-align: center;
+  }
+  .tarjetero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .novedades {
   font-style: italic;
   color: goldenrod;

@@ -51,3 +51,10 @@ main{
         }
     }
 }
+
+@include mobile{
+    .acordeonimg{
+        width: 80%;
+    }
+}
+

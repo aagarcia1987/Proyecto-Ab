@@ -19,7 +19,7 @@ $colorGolden: goldenrod;
 }
 
 @mixin mobile{
-    @media (max-width: 425px){
+    @media (min-width: 375px) and (max-width: 767px){
         @content
     }
 }

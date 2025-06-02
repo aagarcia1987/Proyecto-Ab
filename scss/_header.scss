@@ -33,3 +33,20 @@
         height:  auto;
     }
 
+@include mobile{
+    .header{
+        flex-direction: column;
+        text-align: center;
+        .menu{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+            text-align: center;
+            li{
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}           
+

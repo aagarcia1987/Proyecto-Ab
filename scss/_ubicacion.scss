@@ -5,13 +5,14 @@
         flex-wrap: wrap;
     }
     .gallery img {
-        width: 40%;
+        width: 50%;
         height: auto;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
     .oficinastext{
+        text-align: center;
         font-weight: bold;
         font-size: large;
         font-family: Tahoma;
@@ -22,7 +23,13 @@
         font-weight: bold;
         .arriba{
             text-decoration: none;
-            color: brown;
+            color: orangered;
         }
+    }
+}
+
+@include mobile{
+    .gallery img{
+        border-radius: 70px;
     }
 }
